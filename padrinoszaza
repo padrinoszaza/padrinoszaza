@@ -1,11 +1,106 @@
-index.html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Mi Negocio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PadrinosZaza</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+header {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 20px;
+  color: green;
+  margin: 10px 0;
+}
+
+button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #444;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+</style>
 </head>
+
 <body>
-<h1>Bienvenido a mi negocio</h1>
-<p>Aquí van mis servicios</p>
+
+<header>
+  <h1>PadrinosZaza</h1>
+  <p>Cadenas y Pulseras de Bisutería</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="Cadena Dorada">
+    <h3>Cadena Dorada</h3>
+    <p>Acero inoxidable</p>
+    <div class="price">$199 MXN</div>
+    <a href="PON_AQUI_TU_LINK_DE_PAGO">
+      <button>Comprar</button>
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="Pulsera Plateada">
+    <h3>Pulsera Plateada</h3>
+    <p>Diseño elegante</p>
+    <div class="price">$149 MXN</div>
+    <a href="PON_AQUI_TU_LINK_DE_PAGO">
+      <button>Comprar</button>
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  <p>Contacto WhatsApp: TU NUMERO AQUI</p>
+</footer>
+
 </body>
 </html>
